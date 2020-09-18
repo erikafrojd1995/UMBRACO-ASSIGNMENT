@@ -1,0 +1,36 @@
+
+        #banner .fas{
+            font-size: 100px;
+        }
+        
+        #main{
+           background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+        }
+        
+        .product-grid{
+           /* margin-left:10rem;*/
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #feffed;
+            
+           
+        }
+         .product-grid__item__overlay {
+            
+                margin-bottom:3rem;
+                
+                
+        }
+        
+      .container .contact{
+            background-color: #feffed;
+        }
+        
+    .contact{
+           background-color: #feffed;
+        
+        }
+        
+

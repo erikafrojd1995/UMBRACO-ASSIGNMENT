@@ -1,0 +1,53 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.ContactPage>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<!-- Main -->
+<section id="main" class="wrapper" class="contact">
+    <div class="container" class="contact">
+        <header class="major special">
+            <h2>@Model.Value("pageTitle")</h2>
+            
+                    <p>@Model.Value("bodyText")</p>
+        
+                <div class="containerform">
+    <form action="action_page.php">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <option value="australia">Sweden</option>
+            <option value="canada">Denmark</option>
+      
+        </select>
+
+        <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input class="submit" type="submit" value="Submit">
+
+  </form>
+</div>
+
+        </header>
+        
+
+        
+        
+
+        
+        <!---->
+        
+
+        
+        <!---->
+        
+        
+</section>

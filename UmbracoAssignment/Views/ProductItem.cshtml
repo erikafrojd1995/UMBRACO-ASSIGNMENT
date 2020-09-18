@@ -1,0 +1,24 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.ProductItem>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<!-- Main -->
+<section id="main" class="wrapper" class="cakeItem">
+    <div class="container">
+        <header class="major special">
+            <h2>@Model.Value("productName")</h2>
+            <p>@Model.Value("price") @Model.Value("defaultCurrency")</p>
+            <p>@Model.Value("description")</p>
+            <img src="@Model.Photos.Url" class="cakeimg" width="830" height="580" />
+            
+            <br>
+            <a href="/products" class="button big special">Back to products</a>
+            <br>
+        </header>
+        <!--<a href="#" class="image fit"><img src="images/pic11.jpg" alt="" /></a>-->
+        
+         
+        </div>
+</section>

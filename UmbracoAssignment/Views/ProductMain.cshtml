@@ -1,0 +1,49 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.ProductMain>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<!-- Main -->
+<section id="main" class="wrapper">
+    <div class="container">
+        <header class="major special">
+            <h2>@Model.Value("pageTitle")</h2>
+            
+                    <div class="product-grid">
+            @if (Model.FeaturedProducts != null)
+            {
+                foreach (ProductItem product in Model.FeaturedProducts)
+                {
+                    <a href="@product.Url">
+                        <div class="product-grid__item__overlay">
+                            
+                            <div class="product-grid__item__name">@product.ProductName</div>
+                            <div class="product-grid__item__price">@Model.Value("defaultCurency") @product.Price.ToString("F")</div>
+                           
+                                
+                             <img class="cakeimg-main" src="@product.Photos.Url" width="830" height="280"  />
+                            
+                            
+                        </div>
+                    </a>
+                }
+            }
+        </div>
+
+        </header>
+
+
+
+
+
+
+
+        
+
+        
+        
+
+
+        </div>
+</section>
